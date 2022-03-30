@@ -24,7 +24,7 @@
         <button
           class="button add"
           type="button"
-          (click)="addUser(username.value)"
+          (click)="addUser(username.value, email.value, password.value)"
         >
           ADD
         </button>
@@ -32,15 +32,16 @@
     </form>
     <hr class="divider" />
     <ul style="list-style: none">
-      <li *ngFor="let abc of users">
+      <li *ngFor="let user of users">
         <div class="user-card">
           <div class="details">
-            <h2>{{ abc["uname"] }}</h2>
+            <fa-icon [icon]="faUser" style="font-size: 48px"></fa-icon>
+            <h2>{{ user["uname"] }}</h2>
             <button
               type="button"
               value="Submit"
               class="button remove"
-              (click)="removeUser(abc)"
+              (click)="removeUser(user)"
             >
               REMOVE
             </button>

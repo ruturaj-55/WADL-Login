@@ -42,12 +42,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgb(190, 71, 44);
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 200, 1) 0%,
-    rgba(0, 20, 100, 1) 100%
-  );
 }
 
 #input {
